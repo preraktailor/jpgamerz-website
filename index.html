@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+  </head>
+  <body>
+    <nav>
+      <h1 class="nav-header">JP GAMERZ</h1>
+      <ul class="nav-options">
+        <li>
+          <a href="" class="vertical-center">
+            <ion-icon name="home-outline"></ion-icon>
+            Home</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="vertical-center"
+            ><ion-icon name="settings-outline"></ion-icon> About</a
+          >
+        </li>
+        <li>
+          <a href="#project" class="vertical-center"
+            ><ion-icon name="game-controller-outline"></ion-icon> Projects</a
+          >
+        </li>
+        <li>
+          <a href="#CONTACT" class="vertical-center"
+            ><ion-icon name="call-outline"></ion-icon> Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <div class="" id="">
+      <div class="img1">
+        <img src="./images/game.jpg" />
+        <!-- <h2>WELCOME TO JP GAMERZ WEBSITE</h2> -->
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <h1>ABOUT</h1>
+    </div>
+    <div class="jpgamerz">
+      <p>About JP GAMERZ</p>
+      <img src="./images/jp.jpg" />
+      <a href="https://youtube.com/@jpgamerz867">CLICK</a>
+      <center>
+        <h3 class="h31">
+          The name of the channel is JP GAMERZ.Jay A Tailor & Prerak A Tailor
+          are the owners of this channel.The contents of this channel is
+          GAMING.The gaming videos are of games like GTA 5,CALL OF DUTY..
+        </h3>
+      </center>
+    </div>
+    <div class="topvideos">
+      <p>TOP VIDEOS OF JP GAMERZ</p>
+      <img src="./images/popular.jpg" />
+      <a href="https://youtu.be/qOMMgU17srs">CLICK</a>
+      <center>
+        <h3 class="h32">
+          This is the MOST VIEWED & FIRST video of this channel.This video is
+          published on "12th MAY, 2018".
+        </h3>
+      </center>
+    </div>
+    <div class="CONTENT">
+      <p>CONTENTS ON YOUTUBE</p>
+    </div>
+    <div class="img-container">
+        <center><img src="./images/vlog.jpeg" /></center>
+        <center><img src="./images/teach.jpeg" /></center>
+        <center><img src="./images/gaming.jpeg" /></center>
+    </div>
+
+
+    <div class="project" id="project">
+      <h1>PROJECTS</h1>
+    </div>
+    <div class="projects1">
+      <p>RANDOM IMAGE</p>
+      <center>
+        <img src="https://source.unsplash.com/149x91/?videogame" />
+      </center>
+      <center><h3 class="h33">From this you get random images</h3></center>
+    </div>
+    <div class="projects2">
+      <p>IMAGE SIZE</p>
+      <center><img src="./images/subscribe.webp" class="jp" /></center>
+      <center>
+        <h3 class="h34">When you click on image,then image size can change</h3>
+      </center>
+    </div>
+    <div class="projects3">
+      <center><h2 class="guess1">Guess the Number between 1-100:</h2>
+        <input type="number" id="guessInput">
+        <input type="submit" value="Submit Guess" id="guessButton">
+        <div id="message"></div></center>
+      <center>
+        <h3 class="h35">Guess the number and type in the box,if the number you have guessed is lower or higher than the compiler number then message is shown</h3>
+      </center>
+    </div>
+
+
+    <div class="ME">
+      <h4>ABOUT ME</h4>
+      <center><h5>AN COMPUTER SCIENCE STUDENT</h5></center>
+    </div>
+    <div class="me">
+      <center><img src="./images/my.jpeg" /></center>
+    </div>
+
+
+    <div class="contact" id="CONTACT">
+      <h1>CONTACT</h1>
+      <div class="contacts-container">
+        <img src="./images/phone.jpeg" />
+        <img src="./images/email.jpeg" />
+        <img src="./images/insta.jpeg" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="socialmedia">
+        <a
+          href="https://instagram.com/jp_the_king_07?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://youtube.com/@jpgamerz867"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://t.me/+ulk5iMYefOc0NmFl"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a href="https://www.facebook.com/jay.tailor.9277?mibextid=ZbWKwL"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.snapchat.com/add/preraktailor24?share_id=gOJ_IuhFtR4&locale=en-IN"
+          ><i class="fa-brands fa-snapchat"></i
+        ></a>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; JP GAMERZ,all rights are reserved</p>
+      </div>
+    </footer>
+  </body>
+
+
+  <script>
+    const secretNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    document.getElementById("guessButton").addEventListener("click", function () {
+      const guess = parseInt(document.getElementById("guessInput").value);
+      attempts++;
+
+      if (guess === secretNumber) {
+        document.getElementById("message").textContent = `Congratulations! You guessed the number ${secretNumber} in ${attempts} attempts.`;
+        document.getElementById("guessButton").disabled = true;
+      } else if (guess < secretNumber) {
+        document.getElementById("message").textContent = "Try a higher number.";
+      } else {
+        document.getElementById("message").textContent = "Try a lower number.";
+      }
+    });
+  </script>
+</html>
